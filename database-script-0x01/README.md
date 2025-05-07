@@ -1,43 +1,53 @@
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/2560px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb Logo" width="100"/>
-</p>
+# 📄 Database Schema (DDL)
 
-# alx-airbnb-database
+## 🎯 Objective
 
-> **DataScape: Mastering Database Design**  
-> A real-world database design project modeling Airbnb’s core functionalities.
-
-## 📌 Project Description
-
-This project is part of the **ALX Software Engineering Program** and simulates the design and implementation of a production-ready database for an Airbnb-like platform. It covers conceptual modeling, normalization, schema creation, and realistic data seeding.
+This component of the ALX Airbnb Database Project defines the full relational database schema using SQL Data Definition Language (DDL). The schema models an Airbnb-like application with support for users, properties, bookings, payments, reviews, and messaging.
 
 ---
 
-## 🧠 Learning Objectives
+## 📦 Files
 
-- Design relational databases using ER diagrams  
-- Apply normalization (1NF → 3NF)  
-- Write SQL scripts using DDL and DML  
-- Implement keys, constraints, and indexes  
-- Use GitHub for collaboration and documentation  
+- `schema.sql` — Contains `CREATE TABLE` statements for all entities, including constraints and indexes.
+- `README.md` — Describes the purpose and structure of the schema.
 
 ---
 
-## 📁 Directory Structure
+## 🧱 Schema Features
 
-```plaintext
-alx-airbnb-database/
-│
-├── ERD/                    # Entity-Relationship Diagram
-│   ├── requirements.md
-│   └── erd.drawio / erd.png
-│
-├── normalization.md        # Normalization to 3NF
-│
-├── database-script-0x01/   # Schema (DDL)
-│   ├── schema.sql
-│   └── README.md
-│
-├── database-script-0x02/   # Sample data (DML)
-│   ├── seed.sql
-│   └── README.md
+- **Primary Keys** for entity identification
+- **Foreign Keys** to maintain referential integrity
+- **ENUM types** for roles, status, and payment methods
+- **CHECK constraints** (e.g., rating between 1 and 5)
+- **Timestamps** for auditability
+- **Indexes** on frequently queried columns (e.g., `email`, `property_id`, `booking_id`)
+
+---
+
+## 🗂️ Tables Defined
+
+- `User`
+- `Property`
+- `Booking`
+- `Payment`
+- `Review`
+- `Message`
+
+Each table is carefully structured to comply with **3NF** and follows best practices for relational database design.
+
+---
+
+## ✅ Status
+
+✔️ Schema validated  
+✔️ Referential constraints enforced  
+✔️ Ready for data seeding in `database-script-0x02/`
+
+---
+
+## 🛠️ Usage
+
+Execute the schema using a supported SQL engine (e.g., MySQL or PostgreSQL):
+
+```bash
+psql -f schema.sql or mysql -u username -p < schema.sql
