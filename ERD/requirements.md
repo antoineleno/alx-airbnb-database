@@ -6,7 +6,10 @@ This project documents the **Entity-Relationship Diagram (ERD)** for a simplifie
 
 ## 📌 ER Diagram
 
-![AirBnB ERD](https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Logo.png)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/2560px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb Logo" width="100"/>
+</p>
+
 
 ---
 
