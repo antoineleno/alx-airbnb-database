@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/2560px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb Logo" width="100"/>
+</p>
+
 # 📊 Database Normalization Report
 
 ## 🎯 Objective
