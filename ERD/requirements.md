@@ -6,7 +6,7 @@ This project documents the **Entity-Relationship Diagram (ERD)** for a simplifie
 
 ## 📌 ER Diagram
 
-![AirBnB ERD](https://drive.google.com/uc?id=1yTWuOTOdJpz5LUKJB7VU2yZYWeFoI67Q)
+![AirBnB ERD](https://drive.google.com/file/d/1yTWuOTOdJpz5LUKJB7VU2yZYWeFoI67Q/view)
 
 ---
 
