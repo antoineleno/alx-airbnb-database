@@ -1,3 +1,8 @@
+-- Measure performance BEFORE adding index
+EXPLAIN ANALYZE SELECT * FROM users WHERE email = 'john.doe@example.com';
+EXPLAIN ANALYZE SELECT * FROM bookings WHERE user_id = 'fbb4e465-8f4b-49c3-877e-e85cf8b2f5ad';
+EXPLAIN ANALYZE SELECT * FROM properties WHERE location = 'Malibu, CA';
+
 -- Indexes for the bookings table
 CREATE INDEX idx_bookings_user_id ON bookings(user_id);
 CREATE INDEX idx_bookings_property_id ON bookings(property_id);
@@ -22,3 +27,8 @@ EXPLAIN SELECT * FROM users WHERE email = 'john.doe@example.com';
 
 -- Usage of Anylise
 ANALYZE FORMAT=JSON SELECT * FROM users WHERE email = 'john.doe@example.com';
+
+-- Measure performance AFTER adding index
+EXPLAIN ANALYZE SELECT * FROM users WHERE email = 'john.doe@example.com';
+EXPLAIN ANALYZE SELECT * FROM bookings WHERE user_id = 'fbb4e465-8f4b-49c3-877e-e85cf8b2f5ad';
+EXPLAIN ANALYZE SELECT * FROM properties WHERE location = 'Malibu, CA';
