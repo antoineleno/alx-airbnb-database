@@ -16,3 +16,9 @@ CREATE INDEX idx_properties_host_id ON properties(host_id); -- hypothetical
 
 -- Composite index to speed up queries filtering user bookings by status and date
 CREATE INDEX idx_bookings_user_status_date ON bookings(user_id, status, start_date);
+
+-- Usage of Explain
+EXPLAIN SELECT * FROM users WHERE email = 'john.doe@example.com';
+
+-- Usage of Anylise
+ANALYZE FORMAT=JSON SELECT * FROM users WHERE email = 'john.doe@example.com';
